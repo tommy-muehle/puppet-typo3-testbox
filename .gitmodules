@@ -1,0 +1,21 @@
+[submodule "modules/stdlib"]
+	path = modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
+[submodule "modules/puppi"]
+	path = modules/puppi
+	url = https://github.com/example42/puppi.git
+[submodule "modules/apache"]
+	path = modules/apache
+	url = https://github.com/example42/puppet-apache.git
+[submodule "modules/apt"]
+	path = modules/apt
+	url = https://github.com/puppetlabs/puppetlabs-apt.git
+[submodule "modules/mysql"]
+	path = modules/mysql
+	url = https://github.com/puppetlabs/puppetlabs-mysql.git
+[submodule "modules/php"]
+	path = modules/php
+	url = https://github.com/example42/puppet-php.git
+[submodule "modules/typo3"]
+	path = modules/typo3
+	url = https://github.com/tommy-muehle/puppet-typo3.git
