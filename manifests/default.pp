@@ -61,8 +61,26 @@ mysql_database { 'test':
 }
 
 typo3::project { 'test':
-  version => '6.1.3',
+  version => '6.1.7',
   site_path => '/var/www/test',
   site_user => 'vagrant',
   site_group => 'www-data',
+  require => Apache::Vhost['test.typo3.local'],
+  use_symlink => false,
+  db_name => 'test',
+  db_host => 'localhost',
+  db_pass => '',
+  db_user => 'root',
+  local_conf => {
+      'sys' => {
+         'encryptionKey' => '47ac9add3f53f8464d33ee5785a2f25dc35e8da9fcea8bbc41eb9ced5f58574f326abcecf1924b5ab0d3229c038d7c37',
+      },
+      'be' => {
+         'installToolPassword' => 'bacb98acf97e0b6112b1d1b650b84971',
+      },
+  },
+  extensions => [
+      {"key" => "realurl", "repo" => "git://git.typo3.org/TYPO3v4/Extensions/realurl.git", "tag" => "1_12_6"},
+      {"key" => "phpunit", "repo" => "git://git.typo3.org/TYPO3v4/Extensions/phpunit.git"}
+  ]
 }
