@@ -80,7 +80,7 @@ typo3::project { 'test':
       },
   },
   extensions => [
-      {"key" => "realurl", "repo" => "git://git.typo3.org/TYPO3v4/Extensions/realurl.git", "tag" => "1_12_6"},
-      {"key" => "phpunit", "repo" => "git://git.typo3.org/TYPO3v4/Extensions/phpunit.git"}
+      {"key" => "realurl", "repo" => "git://git.typo3.org/TYPO3CMS/Extensions/realurl.git", "tag" => "1_12_6"},
+      {"key" => "phpunit", "repo" => "git://git.typo3.org/TYPO3CMS/Extensions/phpunit.git"}
   ]
 }
