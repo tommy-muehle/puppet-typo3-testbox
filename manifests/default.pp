@@ -60,6 +60,10 @@ mysql_database { 'test':
   require => Class['mysql::server'],
 }
 
+file { [ '/var/', '/var/www/', '/var/www/test/' ]:
+    ensure => 'directory',
+}
+
 typo3::project { 'test':
   version => '6.1.7',
   site_path => '/var/www/test',
