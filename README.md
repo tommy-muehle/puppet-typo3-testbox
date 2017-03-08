@@ -1,5 +1,7 @@
 # Testbox for puppet module typo3
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 ## Usage
 
     git clone https://github.com/tommy-muehle/puppet-typo3-testbox.git
